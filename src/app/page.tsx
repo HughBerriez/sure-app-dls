@@ -29,7 +29,7 @@ export default function SureAppDlsLandingPage() {
             primary
             onClick={() =>
               handleClick(
-                "https://659e1a04f5eed59ea7345e35-mlxwvuvkbj.chromatic.com/?path=/docs/configure-your-project--docs"
+                "https://659e1a04f5eed59ea7345e35-mlxwvuvkbj.chromatic.com/?path=/docs/stories-readme--docs"
               )
             }
           />
