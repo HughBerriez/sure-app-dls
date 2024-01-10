@@ -1,20 +1,28 @@
 .storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
-  border-radius: 3em;
+  border-radius: 4px;
   cursor: pointer;
   display: inline-block;
   line-height: 1;
 }
 .storybook-button--primary {
   color: white;
-  background-color: #1ea7fd;
+  background-color: #1c53e7;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.storybook-button--primary:hover {
+  background-color: #2e88fa; /* Darker shade for hover state */
 }
 .storybook-button--secondary {
   color: #333;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+.storybook-button--secondary:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 2px inset; /* More prominent shadow for hover state */
 }
 .storybook-button--small {
   font-size: 12px;

@@ -1,4 +1,16 @@
 import type { Config } from "tailwindcss";
+import { withThemeByDataAttribute } from "@storybook/addon-themes"; // https://storybook.js.org/recipes/tailwindcss#2-provide-tailwind-to-stories
+
+export const decorators = [
+  withThemeByDataAttribute({
+    themes: {
+      light: "light",
+      dark: "dark",
+    },
+    defaultTheme: "light",
+    attributeName: "data-mode",
+  }),
+];
 
 const config: Config = {
   content: [
@@ -19,4 +31,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
