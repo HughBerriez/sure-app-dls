@@ -58,6 +58,7 @@ export default function SureAppDlsLandingPage() {
           By{" "}
           <a
             href="https://hb.framer.website"
+            target="_blank"
             className="text-blue-700 hover:text-blue-500"
           >
             Hugh Berryman (Portfolio)
