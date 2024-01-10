@@ -1,8 +1,8 @@
-# SureApp Design System POC by Hugh Berryman - Storybook and Chromatic workflow with NextJS Landing Page
+# SureApp Design System POC by Hugh Berryman
 
 ## Introduction
 
-This project, developed by Hugh Berryman, is for my application for the Design Technologist role at SureApp (2024). It demonstrates integration of Next.js, Storybook, and Chromatic, focusing on scalable UI component development and testing.
+This project is for my application for the Design Technologist role at SureApp (2024). It is a quick POC of a Storybook and Chromatic workflow with a NextJS Landing Page. The primary focus being on setting the foundation for scalable UI component development, testing, and team review workflows.
 
 ## Getting Started
 
