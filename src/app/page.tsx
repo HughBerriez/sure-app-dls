@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-import { Button } from "@/stories/Button";
+import { Button } from "@/stories/sure-examples/Button";
 
 export default function SureAppDlsLandingPage() {
   const handleClick = (url: string) => {
