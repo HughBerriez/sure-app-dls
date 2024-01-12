@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex flex-row justify-between items-center px-8 border-b-[1px] border-b-slate-300 py-3">
+    <header className="flex flex-wrap justify-between items-center px-8 border-b-[1px] border-b-slate-300 py-3">
       <Logo theme="dark" />
 
       <div
