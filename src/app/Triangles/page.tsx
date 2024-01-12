@@ -8,7 +8,7 @@ export default function TrianglesPage() {
   return (
     <main className="flex flex-col h-screen justify-between">
       <Header />
-      <div className="px-8">
+      <div className="px-8 py-7">
         <div className="flex flex-row space-x-4">
           <HeroListing />
           <BookingAside />
