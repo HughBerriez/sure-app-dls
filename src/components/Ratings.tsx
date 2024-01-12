@@ -10,7 +10,7 @@ const Ratings: React.FC<RatingsProps> = ({ rating, numReviews }) => {
   const totalStars = 5;
 
   return (
-    <div className="flex items-center space-x-1">
+    <div className="flex items-center space-x-1 mr-1">
       {[...Array(totalStars)].map((_, index) => (
         <Image
           key={index}

@@ -6,7 +6,7 @@ import Button from "./Button";
 
 export default function BookingAside() {
   return (
-    <div className="flex flex-col shadow-xl p-4 space-y-6">
+    <div className="flex flex-col shadow-xl p-6 space-y-6">
       <div className="space-y-2">
         <div className="text-base font-bold">Summary</div>
         <div className="flex flex-row justify-between items-end space-x-2">

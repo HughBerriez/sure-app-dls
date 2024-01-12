@@ -5,13 +5,12 @@ import Ratings from "./Ratings";
 export default function HeroListing() {
   return (
     <div className="space-y-7 max-w-[600px]">
-      <div className="space-y-4">
-        <div className="flex flex-row justify-between items-end">
-          <div className="space-y-2">
-            <div className="text-3xl font-semibold">Private Penthouse</div>
-            <Ratings numReviews={200} rating={4} />
-          </div>
-          <div className="flex flex-row items-center space-x-2">
+      <div className="flex flex-col justify-between space-y-2">
+        <div className="text-3xl font-semibold">Private Penthouse</div>
+
+        <div className="flex flex-wrap justify-between space-y-2 md:space-y-0">
+          <Ratings numReviews={200} rating={4} />
+          <div className="flex flex-row space-x-2">
             <Image
               src={"/map-pin-outline.svg"}
               alt="map-pin-outline.svg"

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Logo from "./Logo";
 
@@ -7,7 +6,7 @@ export default function Footer() {
     <footer className="flex flex-col md:flex-row justify-between items-center px-8 py-9 space-y-3 border-b-[1px] border-b-white bg-brand ">
       <div className="flex flex-row items-center space-x-10">
         <Logo theme="light" />
-        <div className="text-white text-sm font-normal">
+        <div className="text-white text-sm font-normal text-center">
           © 2023 Triangles, Inc.
         </div>
       </div>
