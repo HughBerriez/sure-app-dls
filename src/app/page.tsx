@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 import { Button } from "@/stories/sure-examples/Button";
+import ButtonTriangles from "../components/Button";
 import Link from "next/link";
 
 export default function SureAppDlsLandingPage() {
@@ -23,39 +24,51 @@ export default function SureAppDlsLandingPage() {
         />
         <h1 className="font-semibold text-xl md:text-3xl">SureApp DLS</h1>
       </header>
-      <main className="flex flex-col items-center justify-center space-y-2">
-        <Link
-          href="/Triangles"
-          className="mb-4 font-medium underline text-slate-500"
-        >
-          Triangles Page -{">"}
-        </Link>
-        <div className="space-x-2">
+      <main className="flex flex-col space-y-12">
+        <div className="flex flex-col space-y-3 items-center justify-center">
+          <p className="font-semibold">View Triangle Test Files:</p>
+          <div className="space-x-2">
+            <ButtonTriangles variant="solid" href="/Triangles">
+              Webpage
+            </ButtonTriangles>
+            <ButtonTriangles
+              variant="outline"
+              href="https://www.figma.com/file/XA07vo28BQ3rsmoA1znt4a/SureApp---Design-Technologist-Test---Hugh-Berryman-2024?type=design&node-id=802%3A1517&mode=design&t=inXRUzAaqNOcrD0h-1"
+            >
+              Figma File
+            </ButtonTriangles>
+          </div>
+        </div>
+
+        <div className="flex flex-col space-y-3 items-center justify-center">
+          <p className="font-semibold">View Design System Files:</p>
+          <div className="space-x-2">
+            <Button
+              label="Storybook"
+              primary
+              onClick={() =>
+                handleClick(
+                  "https://659e1a04f5eed59ea7345e35-pzthfucwzr.chromatic.com/?path=/docs/stories-readme--docs"
+                )
+              }
+            />
+            <Button
+              label="Chromatic"
+              primary={false}
+              onClick={() =>
+                handleClick(
+                  "https://www.chromatic.com/library?appId=659e1a04f5eed59ea7345e35&inviteToken=chpi_6f14430c7f3b4d01ac1234969700d56f"
+                )
+              }
+            />
+          </div>
           <Button
-            label="Storybook"
-            primary
+            label="GitHub"
             onClick={() =>
-              handleClick(
-                "https://659e1a04f5eed59ea7345e35-pzthfucwzr.chromatic.com/?path=/docs/stories-readme--docs"
-              )
-            }
-          />
-          <Button
-            label="Chromatic"
-            primary={false}
-            onClick={() =>
-              handleClick(
-                "https://www.chromatic.com/library?appId=659e1a04f5eed59ea7345e35&inviteToken=chpi_6f14430c7f3b4d01ac1234969700d56f"
-              )
+              handleClick("https://github.com/HughBerriez/sure-app-dls")
             }
           />
         </div>
-        <Button
-          label="GitHub"
-          onClick={() =>
-            handleClick("https://github.com/HughBerriez/sure-app-dls")
-          }
-        />
       </main>
       <footer className="flex flex-col justify-center items-center space-y-3 text-center">
         <p className="font-medium text-sm">
