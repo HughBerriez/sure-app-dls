@@ -15,6 +15,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        brand: {
+          DEFAULT: "#18AAA1", // Default brand color
+          light: "#31BFB7", // Light brand color
+          dark: "#137A74", // Dark brand color
+        },
+      },
     },
   },
   plugins: [],

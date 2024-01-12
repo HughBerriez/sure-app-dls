@@ -11,7 +11,7 @@ export default function Logo({ theme }: LogoProps) {
   // custom color styling and img import based off theme prop
   // if theme is light, use light logo and teal text
   // if theme is dark, use dark logo and white text
-  const logoColor = theme === "light" ? "text-white" : "text-teal-500";
+  const logoColor = theme === "light" ? "text-white" : "text-brand";
   const logoImg =
     theme === "light"
       ? "/triangle-logo-mark_light.svg"

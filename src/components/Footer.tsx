@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-row justify-between items-center px-8 border-b-[1px] border-b-slate-300">
+    <footer className="flex flex-row justify-between items-center px-8 border-b-[1px] border-b-slate-300 bg-brand">
       <Logo theme="light" />
       <div className="text-white text-sm font-normal font-['Roboto'] leading-tight">
         © 2023 Triangles, Inc.
