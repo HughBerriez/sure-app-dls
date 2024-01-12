@@ -19,7 +19,7 @@ export default function Logo({ theme }: LogoProps) {
 
   return (
     <div className="flex flex-row items-center">
-      <Image src={logoImg} alt="Triangles logo-mark" width={70} height={70} />
+      <Image src={logoImg} alt="Triangles logo-mark" width={40} height={40} />
       <p className={`${logoColor} text-xl font-bold leading-7`}>Triangles</p>
     </div>
   );
