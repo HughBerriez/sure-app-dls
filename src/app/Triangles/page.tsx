@@ -6,9 +6,9 @@ import HeroListing from "@/components/HeroListing";
 
 export default function TrianglesPage() {
   return (
-    <main className="flex flex-col bg-slate-200 h-screen justify-between">
+    <main className="flex flex-col h-screen justify-between">
       <Header />
-      <div>
+      <div className="px-8">
         <div className="flex flex-row space-x-4">
           <HeroListing />
           <BookingAside />
