@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 import { Button } from "@/stories/sure-examples/Button";
+import Link from "next/link";
 
 export default function SureAppDlsLandingPage() {
   const handleClick = (url: string) => {
@@ -23,6 +24,12 @@ export default function SureAppDlsLandingPage() {
         <h1 className="font-semibold text-xl md:text-3xl">SureApp DLS</h1>
       </header>
       <main className="flex flex-col items-center justify-center space-y-2">
+        <Link
+          href="/Triangles"
+          className="mb-4 font-medium underline text-slate-500"
+        >
+          Triangles Page -{">"}
+        </Link>
         <div className="space-x-2">
           <Button
             label="Storybook"

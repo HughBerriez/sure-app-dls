@@ -1,6 +1,6 @@
 import type { Preview } from "@storybook/react";
-import "../src/app/globals.css";
 import { withThemeByDataAttribute } from "@storybook/addon-themes";
+import "../src/app/globals.css";
 
 export const decorators = [
   withThemeByDataAttribute({
