@@ -37,7 +37,7 @@ export default function AdditionalOptions() {
   };
 
   return (
-    <div className="mt-4">
+    <div className="mt-4 space-y-4">
       <div className="text-2xl font-semibold">Additional Options</div>
       <div className="border-2">
         {additionalOptionsData.map((option, index) => (

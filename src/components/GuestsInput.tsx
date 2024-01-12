@@ -19,15 +19,25 @@ const GuestsInput = () => {
   };
 
   return (
-    <div className="flex items-center">
-      <button onClick={handleDecrement}>-</button>
+    <div className="flex items-center border-[1px] rounded border-slate-300 px-5 py-3 justify-between">
+      <button
+        onClick={handleDecrement}
+        className="font-semibold hover:bg-slate-200 active:bg-slate-30 rounded-full w-6 h-6 items-center justify-center"
+      >
+        -
+      </button>
       <input
         type="number"
         value={numGuests}
         onChange={handleChange}
-        className="mx-2 w-12 text-center"
+        className="mx-2 w-12 text-center pl-4"
       />
-      <button onClick={handleIncrement}>+</button>
+      <button
+        onClick={handleIncrement}
+        className="font-semibold hover:bg-slate-200 active:bg-slate-30 rounded-full w-6 h-6 items-center justify-center"
+      >
+        +
+      </button>
     </div>
   );
 };
