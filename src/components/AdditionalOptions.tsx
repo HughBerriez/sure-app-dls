@@ -43,14 +43,17 @@ export default function AdditionalOptions() {
         {additionalOptionsData.map((option, index) => (
           <div
             key={index}
-            className="flex flex-row items-center space-x-4 my-2"
+            className="flex flex-row items-center justify-between space-x-4 my-6 px-6"
           >
-            <div className="text-teal-500 text-2xl font-semibold">
-              {option.price}
-            </div>
-            <div>
-              <div>{option.title}</div>
-              <div>{option.description}</div>
+            <div className="flex flex-row space-x-4 items-center">
+              <div className="text-teal-500 text-2xl font-semibold  min-w-20">
+                {option.price}
+              </div>
+
+              <div>
+                <div className="font-semibold">{option.title}</div>
+                <div>{option.description}</div>
+              </div>
             </div>
             <Toggle
               isToggled={option.toggled}

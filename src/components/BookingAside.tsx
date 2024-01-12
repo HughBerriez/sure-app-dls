@@ -1,10 +1,10 @@
-import { Button } from "@/stories/sure-examples/Button";
 import Link from "next/link";
 import React from "react";
+import GuestsInput from "./GuestsInput";
 
 export default function BookingAside() {
   return (
-    <div className="flex flex-col shadow-lg h-auto p-4 space-y-6">
+    <div className="flex flex-col shadow-lg p-4 space-y-6 bg-red-400">
       <div>
         <div className="text-base font-bold">Summary</div>
         <div className="flex flex-row justify-between">
@@ -21,7 +21,8 @@ export default function BookingAside() {
         <label className="text-sm font-bold">Check Out</label>
         <input type="date" />
         <label className="text-sm font-bold">Guests</label>
-        <input type="date" />
+
+        <GuestsInput />
       </div>
 
       <div className="space-y-4">
