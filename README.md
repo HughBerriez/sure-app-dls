@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is for my application for the Design Technologist role at SureApp (2024). It is a quick POC of a Storybook and Chromatic workflow with a NextJS Landing Page. The primary focus being on setting the foundation for scalable UI component development, testing, and team review workflows.
+This project is for my application for the Design Technologist role at SureApp (2024). It is a quick POC of a Storybook and Chromatic workflow with a NextJS Landing Page as well as the Triangles Test takehome project. The primary focus being on setting the foundation for scalable UI component development, testing, and team review workflows.
 
 - Main Application Landing Page: [sure-app-dls.hughberryman.com](https://sure-app-dls.hughberryman.com/)
 
