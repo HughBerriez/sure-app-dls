@@ -10,7 +10,7 @@ export default function TrianglesPage() {
       <Header />
       <div className="flex flex-col w-screen items-center px-8 py-7">
         <div className="space-y-7">
-          <div className="flex flex-row space-x-4">
+          <div className="flex flex-row space-x-7">
             <HeroListing />
             <div className="hidden md:block">
               <BookingAside />
