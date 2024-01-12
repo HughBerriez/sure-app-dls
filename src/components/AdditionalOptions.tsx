@@ -39,27 +39,29 @@ export default function AdditionalOptions() {
   return (
     <div className="mt-4 space-y-4">
       <div className="text-2xl font-semibold">Additional Options</div>
-      <div className="border-2">
+      <div className="border-2 border-slate-200">
         {additionalOptionsData.map((option, index) => (
-          <div
-            key={index}
-            className="flex flex-row items-center justify-between space-x-4 my-6 px-6"
-          >
-            <div className="flex flex-row space-x-4 items-center">
-              <div className="text-teal-500 text-2xl font-semibold  min-w-20">
-                {option.price}
-              </div>
+          <React.Fragment key={index}>
+            <div className="flex flex-row items-center justify-between space-x-4 my-6 px-6">
+              <div className="flex flex-row space-x-4 items-center">
+                <div className="text-teal-500 text-2xl font-semibold  min-w-20">
+                  {option.price}
+                </div>
 
-              <div>
-                <div className="font-semibold">{option.title}</div>
-                <div>{option.description}</div>
+                <div>
+                  <div className="font-semibold">{option.title}</div>
+                  <div>{option.description}</div>
+                </div>
               </div>
+              <Toggle
+                isToggled={option.toggled}
+                onToggle={() => handleToggle(index)}
+              />
             </div>
-            <Toggle
-              isToggled={option.toggled}
-              onToggle={() => handleToggle(index)}
-            />
-          </div>
+            {index < additionalOptionsData.length - 1 && (
+              <hr className="border-t mx-4 border-slate-200" />
+            )}
+          </React.Fragment>
         ))}
       </div>
     </div>
