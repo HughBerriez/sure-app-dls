@@ -36,7 +36,7 @@ export default function BookingAside() {
       </div>
 
       <div className="space-y-4">
-        <div>
+        <div className="space-y-2">
           <div className="flex flex-row justify-between">
             <div className="text-sm font-normal">Service Fee</div>
             <div className="text-sm font-normal">$30</div>
