@@ -12,9 +12,14 @@ export default function TrianglesPage() {
         <div className="space-y-7">
           <div className="flex flex-row space-x-4">
             <HeroListing />
-            <BookingAside />
+            <div className="hidden md:block">
+              <BookingAside />
+            </div>
           </div>
           <AdditionalOptions />
+          <div className="block md:hidden">
+            <BookingAside />
+          </div>
         </div>
       </div>
       <Footer />
